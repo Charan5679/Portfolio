@@ -107,7 +107,7 @@ export function GithubHeatmap() {
           <span className="text-white/60 font-semibold">{totalContribs.toLocaleString()}</span> contributions in the last year
         </div>
         <a
-          href="https://github.com/sricharan"
+          href="https://github.com/Charan5679"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[10px] text-white/25 hover:text-white/45 transition-colors font-mono"
