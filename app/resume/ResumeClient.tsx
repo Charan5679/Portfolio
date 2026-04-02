@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, CheckCircle } from "lucide-react";
+import { Download } from "lucide-react";
 import { personal, experience, education, skills, projects } from "@/lib/data";
 import { Reveal, SectionLabel, TechTag } from "@/components/ui/primitives";
 
@@ -34,9 +34,9 @@ export function ResumeClient() {
             </Reveal>
           </div>
           <Reveal delay={0.12}>
-            <button className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#efefef] text-[#090909] font-semibold text-[13px] hover:bg-[#d0d0d0] transition-all flex-shrink-0">
+            <a href="/resume.pdf" download="SriCharan_Vagalagani_Resume.pdf" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#efefef] text-[#090909] font-semibold text-[13px] hover:bg-[#d0d0d0] transition-all flex-shrink-0">
               <Download size={14} /> Download PDF
-            </button>
+            </a>
           </Reveal>
         </div>
       </div>
@@ -54,9 +54,9 @@ export function ResumeClient() {
               <span className="text-[#303030]">-</span>
               <span>{personal.location}</span>
               <span className="text-[#303030]">-</span>
-              <span>linkedin.com/in/sricharan</span>
+              <span>linkedin.com/in/sricharanv</span>
               <span className="text-[#303030]">-</span>
-              <span>github.com/sricharan</span>
+              <span>github.com/Charan5679</span>
             </div>
           </Reveal>
 
@@ -153,7 +153,7 @@ export function ResumeClient() {
             </ResumeSec>
           </Reveal>
 
-{/* Download button at bottom */}
+          {/* Download button at bottom */}
           <Reveal>
             <div className="flex items-center justify-center pt-6 border-t border-white/[0.05]">
               <a href="/resume.pdf" download="SriCharan_Vagalagani_Resume.pdf" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/[0.07] text-[#9a9a9a] text-[13px] hover:border-white/[0.13] hover:text-[#efefef] hover:bg-[#202020] transition-all">
@@ -161,6 +161,7 @@ export function ResumeClient() {
               </a>
             </div>
           </Reveal>
+
         </div>
       </div>
     </div>
