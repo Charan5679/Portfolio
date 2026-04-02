@@ -153,15 +153,14 @@ export function ResumeClient() {
             </ResumeSec>
           </Reveal>
 
-          {/* Download button at bottom */}
+{/* Download button at bottom */}
           <Reveal>
             <div className="flex items-center justify-center pt-6 border-t border-white/[0.05]">
-              <button className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/[0.07] text-[#9a9a9a] text-[13px] hover:border-white/[0.13] hover:text-[#efefef] hover:bg-[#202020] transition-all">
+              <a href="/resume.pdf" download="SriCharan_Vagalagani_Resume.pdf" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/[0.07] text-[#9a9a9a] text-[13px] hover:border-white/[0.13] hover:text-[#efefef] hover:bg-[#202020] transition-all">
                 <Download size={13} /> Download as PDF
-              </button>
+              </a>
             </div>
           </Reveal>
-
         </div>
       </div>
     </div>
