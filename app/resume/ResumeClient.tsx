@@ -36,12 +36,12 @@ export function ResumeClient() {
           {/* No Reveal wrapper — button must always be visible and clickable */}
           <a
             href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#efefef] text-[#090909] font-semibold text-[13px] hover:bg-[#d0d0d0] transition-all flex-shrink-0"
-          >
-            <Download size={14} /> Download PDF
-          </a>
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#efefef] text-[#090909] font-semibold text-[13px] hover:bg-[#d0d0d0] transition-all flex-shrink-0 relative z-10"
+>
+  <Download size={14} /> Download PDF
+</a>
         </div>
       </div>
 
