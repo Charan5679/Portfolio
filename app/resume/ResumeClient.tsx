@@ -33,19 +33,11 @@ export function ResumeClient() {
               <p className="text-[13px] text-[#555] mt-3">Full Stack Developer - Computer Science Graduate Student</p>
             </Reveal>
           </div>
-         <button
-  onClick={() => {
-    const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "SriCharan_Vagalagani_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }}
-  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#efefef] text-[#090909] font-semibold text-[13px] hover:bg-[#d0d0d0] transition-all flex-shrink-0"
->
-  <Download size={14} /> Download PDF
-</button>
+          <Reveal delay={0.12}>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#efefef] text-[#090909] font-semibold text-[13px] hover:bg-[#d0d0d0] transition-all flex-shrink-0">
+              <Download size={14} /> Download PDF
+            </a>
+          </Reveal>
         </div>
       </div>
 
@@ -164,7 +156,7 @@ export function ResumeClient() {
           {/* Download button at bottom */}
           <Reveal>
             <div className="flex items-center justify-center pt-6 border-t border-white/[0.05]">
-              <a href="/resume.pdf" download="SriCharan_Vagalagani_Resume.pdf" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/[0.07] text-[#9a9a9a] text-[13px] hover:border-white/[0.13] hover:text-[#efefef] hover:bg-[#202020] transition-all">
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/[0.07] text-[#9a9a9a] text-[13px] hover:border-white/[0.13] hover:text-[#efefef] hover:bg-[#202020] transition-all">
                 <Download size={13} /> Download as PDF
               </a>
             </div>
